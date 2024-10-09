@@ -1,0 +1,25 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #640D5F;
+}
+
+.navbar div h3{
+    font-family: "Lato", sans-serif;
+    color: white;
+}
+
+.items{
+    display: flex;
+    align-items: center;
+    
+}
+
+.items a{
+    text-decoration: none;
+    color: white;
+    margin: 0rem 1rem;
+    font-family: "Lato", sans-serif;
+}
