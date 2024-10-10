@@ -2,6 +2,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom"
 import HomePage from "./home/HomePage"
 import { NotFoundPage } from "./notFound/NotFoundPage"
 import StartPage from "./start/StartPage"
+import { AuthProvider } from "./context/AuthProvider"
 
 const App = () => {
 
@@ -22,7 +23,9 @@ const App = () => {
 
 
   return (
-    <RouterProvider router={router} />
+    <AuthProvider>
+      <RouterProvider router={router} />
+    </AuthProvider>
   )
 }
 
